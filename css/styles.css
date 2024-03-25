@@ -1,0 +1,158 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #place-for-content {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px 50px 50px 50px;
+    grid-column-gap: 20px;
+  }
+
+  @media screen and (max-width: 64em){  /* small laptop < 1024px */
+    #place-for-content {
+        grid-template-columns: 1fr;
+        align-items: center;  
+    }
+
+    .band-name {
+        margin-left: 8.125em;
+        margin-right: 10.625em;
+    }
+    
+    .band-image {
+        margin-left: 5em;
+    }
+    
+    .band-description {
+        font-size: 1em;
+        margin-left: 2.5em;
+        margin-top: 7em;
+    }
+    
+    .music-video {
+        margin-left: 31.25em;
+        margin-top: -15.625em;
+    
+    }
+}
+
+@media screen and (max-width: 48em){ /* tablet < 768px */
+    #place-for-content {
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+
+    img {
+        width: 18.75em;
+    }
+
+    video {
+        width: 80%;
+        height: 80%;
+    }
+
+    .band-name {
+        margin-left: 3.2em;
+    }
+    
+    .band-image {
+        width: 70%;
+        margin-left: 7em;
+    }
+    
+    .band-description {
+        font-size: 1em;
+        margin-left: 3.5em;
+        margin-top: 4em;
+    }
+    
+    .music-video {
+        width: 70%;
+        margin-left: 7em;
+        margin-top: 4em;
+    
+    }
+}
+
+@media screen and (max-width: 30em){ /* mobile < 480px */
+    #place-for-content {
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+
+    img {
+        width: 18.75em;
+    }
+
+    video {
+        width: 80%;
+        height: 80%;
+    }
+
+    .band-name {
+        margin-left: 3.2em;
+    }
+    
+    .band-image {
+        width: 70%;
+        margin-left: 7em;
+    }
+    
+    .band-description {
+        font-size: 1em;
+        margin-left: 3.5em;
+        margin-top: 4em;
+    }
+    
+    .music-video {
+        width: 70%;
+        margin-left: 7em;
+        margin-top: 4em;
+    
+    }
+}
+
+
