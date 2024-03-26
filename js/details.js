@@ -14,10 +14,10 @@ var client = contentful.createClient({
   }
 
 
-var image = document.createElement('img');
-    if (entry.fields.drinktopping){
-    drinktopping.src = 'https:' + entry.fields.drinktopping.fields.file.url;
-}
+  var image = document.createElement('img'); 
+  if (entry.fields.drinktopping){
+      image.src = 'https:' + entry.fields.drinktopping.fields.file.url;
+  }
 
 var description = document.createElement('p'); {
     description.innerHTML = entry.fields.description;
