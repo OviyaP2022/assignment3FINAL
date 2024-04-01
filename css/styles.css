@@ -67,7 +67,7 @@ p {
 
 .product-image {
     width: 400px;
-    margin-left: 500px;
+    margin-left: auto;
 }
 
 footer {
@@ -127,7 +127,7 @@ footer {
 
     .product-image {
         width: 400px;
-        margin-left: 200px;
+        margin-left: auto;
     }
 }
 
@@ -149,6 +149,7 @@ footer {
     
     .product-image {
         width: 400px;
+        margin-left: 100px;
     }
     
     p {
