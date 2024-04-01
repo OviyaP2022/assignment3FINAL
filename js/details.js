@@ -5,10 +5,10 @@ var id = parametersInURL.get('id');
 
 var client = contentful.createClient({
     space: 'ete5e4krj05q',
-    accessToken: 'CFPAT-ftGO8_klmWJQqOztYgYOfo0hD9vtItIwGfeXuDREYNs',
+    accessToken: 'ilii4B8XswOHBvJwyDec5UOSf6a5O-gJPNn4WqKrqBM',
   });
 
-  var type = document.getElementById('drink-topping');
+  var type = document.getElementById('type');
   client.getEntry(id).then(function (entry) {
     console.log(entry);
 
