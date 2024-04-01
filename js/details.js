@@ -16,6 +16,7 @@ var client = contentful.createClient({
       type.appendChild(name);
     }
     var image = document.createElement('img'); 
+    image.classList.add('product-image');
     if (entry.fields.drinktopping){
         image.src = 'https:' + entry.fields.drinktopping.fields.file.url;
         type.appendChild(image);
