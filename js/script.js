@@ -23,9 +23,9 @@ client.getEntries({content_type:'bubbleTeaEncyclopedia'}).then(function (entries
             image.src = 'https:' + entry.fields.drinktopping.fields.file.url;
         }
 
-        var description = document.createElement('p'); 
-            description.innerHTML = entry.fields.description;
-            entryDiv.appendChild(description);
+       // var description = document.createElement('p'); 
+            // description.innerHTML = entry.fields.description;
+           //  entryDiv.appendChild(description);
         
 
         var link = document.createElement('a');
