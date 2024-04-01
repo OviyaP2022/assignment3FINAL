@@ -22,12 +22,7 @@ client.getEntries({content_type:'bubbleTeaEncyclopedia'}).then(function (entries
         if (entry.fields.drinktopping){
             image.src = 'https:' + entry.fields.drinktopping.fields.file.url;
         }
-
-       // var description = document.createElement('p'); 
-            // description.innerHTML = entry.fields.description;
-           //  entryDiv.appendChild(description);
         
-
         var link = document.createElement('a');
         link.href = "details.html?id="+entry.sys.id;
         link.appendChild(image);
