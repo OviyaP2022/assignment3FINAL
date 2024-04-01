@@ -8,6 +8,10 @@ var client = contentful.createClient({
     accessToken: 'CFPAT-ftGO8_klmWJQqOztYgYOfo0hD9vtItIwGfeXuDREYNs',
   });
 
+  var type = document.getElementById('drink-topping');
+  client.getEntry(id).then(function (entry) {
+    console.log(entry);
+
   var name = document.createElement('h2'); {
     name.innerHTML = entry.fields.title; 
     entryDiv.appendChild(name);
@@ -28,3 +32,4 @@ var link = document.createElement('a');
     link.href = "details.html?id="+entry.sys.id;
     link.appendChild(drinktopping);
     entryDiv.appendChild(link);
+});
